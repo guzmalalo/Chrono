@@ -3,7 +3,9 @@ project(Chrono C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Chrono main.c)
+add_executable(Chrono main.c
+        button.c
+        button.h)
 
 IF(WIN32)
     target_link_libraries(Chrono -lmingw32 -lallegro-5.0.10-monolith-md-debug)
